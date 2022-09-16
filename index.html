@@ -3,52 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="estilo.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HarppyLog</title>
    
 </head>
 <body>
     <nav class="navbar bg" style="background-color: #00bfff;">
         <div class="container-fluid">
           <a class="navbar-brand">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_R2sTg_-RwCcirDvL-HreaIAO6SeF5RDug5E1pivYNqHYtzZ8bOeMwsFs9chKSmBFtFA&usqp=CAU" alt="Logo" width="120" height="90" class="d-inline-block ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_R2sTg_-RwCcirDvL-HreaIAO6SeF5RDug5E1pivYNqHYtzZ8bOeMwsFs9chKSmBFtFA&usqp=CAU" alt="Logo" width="120" height="90" class="rounded">
             <h4> Harppy Log</h4>
+          
           </a>
-          <div class="container  d-inline-block text-center" >
+          <div class="container  d-inline-block text-center " >
             <form class="text-center" role="search"  >
-                <input class="form text-center" type="search" placeholder="Search" aria-label="Search" width="50"  >
-                <button class="btn " type="submit" style="background-color: #eed810;" >buscar</button>
+                <input class="form w-25 p-3 type="search" placeholder="Search" aria-label="Search" width="50"  >
+                <button class="btn shadow-lg" type="submit" style="background-color: #eed810;" id="botao" >buscar</button>
               </form>
             </div>
+
+        <div class="row mx-md-n5" data-toggle="tooltip" data-placement="top" title="Fale Conosco">
+        <a class="nav-link " href="teste.html"  >  <svg xmlns="http://www.w3.org/2000/svg"  width="50" height="40"><path fill-rule="evenodd" d="M1.75 1A1.75 1.75 0 000 2.75v9.5C0 13.216.784 14 1.75 14H3v1.543a1.457 1.457 0 002.487 1.03L8.061 14h6.189A1.75 1.75 0 0016 12.25v-9.5A1.75 1.75 0 0014.25 1H1.75zM1.5 2.75a.25.25 0 01.25-.25h12.5a.25.25 0 01.25.25v9.5a.25.25 0 01-.25.25h-6.5a.75.75 0 00-.53.22L4.5 15.44v-2.19a.75.75 0 00-.75-.75h-2a.25.25 0 01-.25-.25v-9.5z"></path><path d="M22.5 8.75a.25.25 0 00-.25-.25h-3.5a.75.75 0 010-1.5h3.5c.966 0 1.75.784 1.75 1.75v9.5A1.75 1.75 0 0122.25 20H21v1.543a1.457 1.457 0 01-2.487 1.03L15.939 20H10.75A1.75 1.75 0 019 18.25v-1.465a.75.75 0 011.5 0v1.465c0 .138.112.25.25.25h5.5a.75.75 0 01.53.22l2.72 2.72v-2.19a.75.75 0 01.75-.75h2a.25.25 0 00.25-.25v-9.5z"></path></svg>
+      </a>
+        </div>
+
+            
         </div>
       </nav>
-      <nav class="navbar navbar-expand-lg " style="background-color: #00bfff;">
-        <div class="container align-text-center">
-        
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-   
+      <nav class="nav justify-content-center" style="background-color: #00bfff;">
+       <h4> 
+        <ul class="nav justify-content-center n">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Ativo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Desativado</a>
+          </li>
+        </ul>
+   </h4>
           </div>
         </div>
       </nav>
-    
+
+
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
 </body>
 </html>
