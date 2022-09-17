@@ -1,0 +1,11 @@
+menu{
+    text-emphasis-color: red;
+}
+
+texto-menu{
+    color: bisque;
+}
+
+nav-link:hover{
+    color: black;
+}
