@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <link rel="stylesheet" href="estilo.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +48,14 @@
         <h4>
             <ul class="nav justify-content-center n">
                 <li class="nav-item">
-                    <a class="nav-link hover" style="color: #ffffff;" href="#">Ativo</a>
+                    <a class="nav-link hover-overlay " style="color: #ffffff;" href="#">Ativo</a>
+                    <div class="mask" style="
+                          background: linear-gradient(
+                            45deg,
+                            rgba(29, 236, 197, 0.5),
+                            rgba(91, 14, 214, 0.5) 100%
+                          );
+                        "></div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" style="color: #ffffff;" href="carga.html">Sintuação de Carga</a>
@@ -107,7 +114,32 @@
             </tbody>
         </table>
     </div>
+</br>
 
+<!-- Button trigger modal -->
+<div class="d-grid gap-2 col-6 mx-auto">
+<button type="button" class="btn shadow-lg btn-lg" style="background-color: #e40808ad; color: #e5ecee;" data-bs-toggle="modal" data-bs-target="#exampleModal">Finalizar Ordem de Seerviço</button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Você quer filanizar mesmo?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Ao finalizar uma ordem de pedido não terá como reverter a ação.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #dfdc0fef;">Cancelar</button>
+                <button type="button" class="btn btn-primary" style="background-color: #046b09ef;">Finalizar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
