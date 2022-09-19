@@ -1,4 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Sarala&display=swap');
+
+
+
+
+
+
+
 .nav-link:hover{
-    background-color: black;
-    text-shadow: inset 100px 0 0 0 #54b3d6;
+    background-color: rgb(238, 202, 44);
+    color: brown;
+    border: 10px;
+    padding: auto;
+
+}
+.nav-link{
+    
+    color: rgb(2, 5, 7);
+    text-shadow: 12px;
+    padding: 7px;
+    border-radius: 2px;
+    border: 4px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: x-large;
+    font-weight: 800;
+    
+}
+
+*{
+    padding: 0;
+    margin: none;
+}
+
+.banner{
+    
+background-image: linear-gradient(15deg,
+            hsl(195deg 100% 48%) 0%,
+            hsl(202deg 57% 64%) 28%,
+            hsl(207deg 20% 65%) 44%,
+            hsl(20deg 10% 64%) 57%,
+            hsl(25deg 34% 62%) 68%,
+            hsl(27deg 52% 58%) 78%,
+            hsl(29deg 66% 54%) 88%,
+            hsl(32deg 90% 46%) 100%);
+ box-sizing: 40px;
+ margin-bottom: 60px;
+ border-bottom: 5px solid black;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+    border-radius: 0.2px;
+    padding: 2px;
+    
+    gap: 1px;
+    
+}
+
+.logo-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    background:linear-gradient(0deg, rgba(180,
+        222,
+        235,
+        0.9), rgba(180, 222, 235, 0.9)),
+        linear-gradient(0deg, #F4A023, #F4A023),
+        #55F1E8;
+}
+#tabela-carga{
+    border: 3px solid black;
+    padding: 4px;
+    border-bottom: 5px black;
+}
+
+.elemento-tabela-carga:hover{
+    background-color: #e2f426;
+}
+#botao{
+    text-shadow: 2px blue;
+    background-color: #eed810;
+    color: rgb(12, 12, 12);
+    border-radius: 5px;
+    padding: 15px;
+   font-size: 20px;
+   font-weight: 500;
+font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+
+#botao:hover{
+    background-color: azure;
+    color: red;
+    text-shadow: 20px;
+
 }
